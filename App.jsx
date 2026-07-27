@@ -662,7 +662,7 @@ function TopBar({ view, goTo, cartCount, menuOpen, setMenuOpen, user }) {
     <header className="avro-topbar">
       <div className="avro-topbar-inner">
         <button className="avro-logo-btn" onClick={() => goTo("home")} aria-label="AVRO home">
-          <img src={LOGO} alt="AVRO" className="avro-logo-img" />
+          <img src={LOGO} alt="AVRO" className="avro-logo-img" loading="eager" />
         </button>
 
         <nav className="avro-nav-desktop">
@@ -823,7 +823,7 @@ function ProductCard({ product, onClick, wishlist, toggleWishlist }) {
         <span className="avro-card-number" aria-hidden="true">
           {product.number}
         </span>
-        <img src={product.images?.[0] || product.image} alt={product.name} />
+        <img src={product.images?.[0] || product.image} alt={product.name} loading="lazy" />
         {product.tags[0] && <span className="avro-card-tag">{product.tags[0]}</span>}
         <button 
           className="avro-wishlist-btn"
@@ -944,7 +944,7 @@ function ProductPage({ product, addToCart, goTo, reviews }) {
           <span className="avro-card-number avro-card-number-lg" aria-hidden="true">
             {product.number}
           </span>
-          <img src={images[imageIndex]} alt={product.name} />
+          <img src={images[imageIndex]} alt={product.name} loading="lazy" />
           {hasMultipleImages && (
             <>
               <button 
@@ -1102,7 +1102,7 @@ function CartPage({ items, updateQty, removeItem, subtotal, total, discountAmoun
           <div className="avro-cart-items">
             {items.map((it) => (
               <div className="avro-cart-item" key={it.productId + it.size}>
-                <img src={it.product.images?.[0] || it.product.image} alt={it.product.name} />
+                <img src={it.product.images?.[0] || it.product.image} alt={it.product.name} loading="lazy" />
                 <div className="avro-cart-item-info">
                   <h3>{it.product.name}</h3>
                   <p className="avro-muted">Size {it.size}</p>
@@ -1736,7 +1736,7 @@ function Footer({ goTo }) {
     <footer className="avro-footer">
       <div className="avro-footer-top">
         <div className="avro-footer-brand">
-          <img src={LOGO} alt="AVRO" className="avro-footer-logo" />
+          <img src={LOGO} alt="AVRO" className="avro-footer-logo" loading="lazy" />
           <p>WEAR BEYOND</p>
         </div>
         <div className="avro-footer-links">
