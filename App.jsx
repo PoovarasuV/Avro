@@ -206,6 +206,51 @@ const PRODUCTS = [
     stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
     totalStock: 63,
   },
+  {
+  id: "acm-away-2012",
+
+  name: "AC Milan Away 2012/13 — No.22",
+
+  team: "A.C. Milan",
+
+  category: "Club",
+
+  tags: ["ITALIAN LEGEND", "SERIE A CLASSIC"],
+
+  price: 999,
+
+  mrp: 1599,
+
+  number: "22",
+
+  images: [
+    "/item8/1.png",
+    "/item8/2.png",
+    "/item8/3.png"
+  ],
+
+  sizes: ["S", "M", "L", "XL", "XXL"],
+
+  fit: "Athletic Regular Fit",
+
+  description:
+    "Celebrate one of AC Milan's most memorable away kits with the iconic 2012/13 jersey. Finished with Kaká #22 on the back, this legendary design is made for every true Rossoneri supporter.",
+
+  details: [
+    "100% breathable performance polyester for all-day comfort",
+    "Athletic regular fit with lightweight match-day feel",
+    "Premium embroidered AC Milan crest with authentic detailing",
+    "Comes with legendary Kaká #22 printed on the back",
+  ],
+
+  rating: 5.0,
+
+  reviewCount: 0,
+
+  stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
+
+  totalStock: 63,
+},
 ];
 
 const GATES = ["Main Gate", "2A Gate", "Allmart Gate", "SJT 11th Gate", "Others"];
