@@ -193,6 +193,7 @@ const INITIAL_REVIEWS = [
     rating: 5,
     text: "Wore this to the inter-hostel finals, got stopped four times asking where I got it. Fit is exactly the oversized look I wanted.",
     date: "2 weeks ago",
+    image: "/reviews/argentina.jpg",
   },
   {
     id: "r2",
@@ -1542,6 +1543,9 @@ function ReviewCard({ review, compact }) {
         ))}
       </div>
       <p className="avro-review-text">&ldquo;{review.text}&rdquo;</p>
+      {review.image && (
+        <img src={review.image} alt={`Review by ${review.name}`} className="avro-review-image" loading="lazy" />
+      )}
       <div className="avro-review-meta">
         <span className="avro-review-name">{review.name}</span>
         <span className="avro-muted">
@@ -2281,6 +2285,7 @@ const CSS = `
 .avro-review-card { border: 1px solid var(--grey-100); border-radius: 4px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
 .avro-review-card.compact { background: var(--off-white); border-color: transparent; }
 .avro-review-text { font-size: 14px; line-height: 1.55; color: var(--black); margin: 0; flex: 1; }
+.avro-review-image { width: 100%; border-radius: 4px; margin-top: 8px; object-fit: cover; }
 .avro-review-meta { display: flex; flex-direction: column; gap: 2px; }
 .avro-review-name { font-weight: 700; font-size: 13px; }
 .avro-review-form { border: 1.5px solid var(--black); border-radius: 4px; padding: 24px; height: fit-content; }
