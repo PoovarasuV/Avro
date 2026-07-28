@@ -181,6 +181,31 @@ const PRODUCTS = [
     stock: { S: 8, M: 12, L: 15, XL: 10, XXL: 6 },
     totalStock: 51,
   },
+  {
+    id: "rma-home-2011",
+    name: "Real Madrid Home 2011/12 — No.7",
+    team: "Real Madrid C.F.",
+    category: "Club",
+    tags: ["CLUB LEGEND", "GALÁCTICOS ERA"],
+    price: 999,
+    mrp: 1599,
+    number: "7",
+    images: ["/item7/ChatGPT Image Jul 28, 2026, 10_06_18 AM.png", "/item7/ChatGPT Image Jul 28, 2026, 10_06_29 AM.png", "/item7/ChatGPT Image Jul 28, 2026, 10_06_38 AM.png"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    fit: "Athletic Regular Fit",
+    description:
+      "Relive the iconic 2011/12 season with Real Madrid's legendary home jersey. Finished with Cristiano Ronaldo #7 printed on the back, this timeless classic is built for every true Madridista.",
+    details: [
+      "100% breathable performance polyester for all-day comfort",
+      "Athletic regular fit with lightweight match-day feel",
+      "Premium embroidered Real Madrid crest with classic gold detailing",
+      "Comes with legendary Cristiano Ronaldo #7 printed on the back",
+    ],
+    rating: 5.0,
+    reviewCount: 0,
+    stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
+    totalStock: 63,
+  },
 ];
 
 const GATES = ["Main Gate", "2A Gate", "Allmart Gate", "SJT 11th Gate", "Others"];
@@ -191,7 +216,7 @@ const INITIAL_REVIEWS = [
     name: "Aarav S.",
     product: "Argentina Home '26 — No.10",
     rating: 5,
-    text: "Wore this to the inter-hostel finals, got stopped four times asking where I got it. Fit is exactly the oversized look I wanted.",
+    text: "Wore this to the inter-hostel finals, got stopped four times asking where I got it.",
     date: "2 weeks ago",
     image: "/reviews/argentina.jpg",
   },
