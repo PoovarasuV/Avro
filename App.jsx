@@ -2156,7 +2156,7 @@ const CSS = `
   font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 5px 9px; border-radius: 2px;
 }
 .avro-cod-badge {
-  position: absolute; top: 10px; left: 10px; background: #008000; color: var(--white);
+  position: absolute; bottom: 10px; left: 10px; background: #008000; color: var(--white);
   font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 5px 9px; border-radius: 2px;
 }
 .avro-cod-badge-lg {
