@@ -638,6 +638,18 @@ export default function App() {
         )}
       </main>
 
+      <a
+        href={"https://wa.me/" + WHATSAPP_NUMBER}
+        target="_blank"
+        rel="noreferrer"
+        className="avro-whatsapp-float"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+
       <Footer goTo={goTo} />
 
       {toast && (
@@ -757,6 +769,52 @@ function Home({ goTo, openProduct, reviews, wishlist, toggleWishlist }) {
 
       <section className="avro-section">
         <div className="avro-section-head">
+          <p className="avro-eyebrow">WHY CHOOSE AVRO?</p>
+          <h2 className="avro-h2">Built for the campus</h2>
+        </div>
+        <div className="avro-features-grid">
+          <div className="avro-feature-card">
+            <div className="avro-feature-icon">
+              <ShieldCheck size={24} strokeWidth={1.5} />
+            </div>
+            <h3>Premium Stitched Jerseys</h3>
+            <p>High-quality stitching and fabric that lasts. Professional-grade materials for authentic match-day feel.</p>
+          </div>
+          <div className="avro-feature-card">
+            <div className="avro-feature-icon">
+              <Truck size={24} strokeWidth={1.5} />
+            </div>
+            <h3>Delivery Around VIT</h3>
+            <p>Fast delivery to all VIT gates. Main Gate, 2A Gate, Allmart Gate, SJT 11th Gate, and more.</p>
+          </div>
+          <div className="avro-feature-card">
+            <div className="avro-feature-icon">
+              <RotateCcw size={24} strokeWidth={1.5} />
+            </div>
+            <h3>Cash on Delivery</h3>
+            <p>Pay when you receive. No advance payment needed. Check your product before you pay.</p>
+          </div>
+          <div className="avro-feature-card">
+            <div className="avro-feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <h3>Easy WhatsApp Ordering</h3>
+            <p>Order directly through WhatsApp. Quick response, instant support, and hassle-free communication.</p>
+          </div>
+          <div className="avro-feature-card">
+            <div className="avro-feature-icon">
+              <Check size={24} strokeWidth={1.5} />
+            </div>
+            <h3>Quality Checked Before Delivery</h3>
+            <p>Every jersey is inspected before delivery. No defects, no issues, just perfect products.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="avro-section">
+        <div className="avro-section-head">
           <h2 className="avro-h2">THE CURRENT DROP</h2>
           <button className="avro-textlink" onClick={() => goTo("shop")}>
             View all <ChevronRight size={14} />
@@ -825,6 +883,7 @@ function ProductCard({ product, onClick, wishlist, toggleWishlist }) {
         </span>
         <img src={product.images?.[0] || product.image} alt={product.name} loading="lazy" />
         {product.tags[0] && <span className="avro-card-tag">{product.tags[0]}</span>}
+        <span className="avro-cod-badge">COD</span>
         <button 
           className="avro-wishlist-btn"
           onClick={(e) => {
@@ -945,6 +1004,7 @@ function ProductPage({ product, addToCart, goTo, reviews }) {
             {product.number}
           </span>
           <img src={images[imageIndex]} alt={product.name} loading="lazy" />
+          <span className="avro-cod-badge-lg">CASH ON DELIVERY</span>
           {hasMultipleImages && (
             <>
               <button 
@@ -1972,6 +2032,27 @@ const CSS = `
 .avro-product-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px;
 }
+
+/* Features grid */
+.avro-features-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;
+}
+.avro-feature-card {
+  background: var(--off-white); border-radius: 8px; padding: 24px;
+  text-align: center;
+}
+.avro-feature-icon {
+  width: 56px; height: 56px; margin: 0 auto 16px;
+  background: var(--white); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--black);
+}
+.avro-feature-card h3 {
+  font-size: 16px; margin: 0 0 8px; font-weight: 700;
+}
+.avro-feature-card p {
+  font-size: 13px; color: var(--grey-600); line-height: 1.5; margin: 0;
+}
 .avro-card {
   background: var(--white); border: 1px solid var(--grey-100); border-radius: 4px;
   overflow: hidden; text-align: left; padding: 0; display: flex; flex-direction: column;
@@ -1999,6 +2080,15 @@ const CSS = `
 .avro-card-tag {
   position: absolute; top: 10px; right: 10px; background: var(--black); color: var(--white);
   font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 5px 9px; border-radius: 2px;
+}
+.avro-cod-badge {
+  position: absolute; top: 10px; left: 10px; background: #008000; color: var(--white);
+  font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 5px 9px; border-radius: 2px;
+}
+.avro-cod-badge-lg {
+  position: absolute; bottom: 10px; left: 10px; background: #008000; color: var(--white);
+  font-size: 12px; font-weight: 700; letter-spacing: 1.5px; padding: 8px 12px; border-radius: 3px;
+  z-index: 5;
 }
 .avro-card-body { padding: 12px 14px 16px; }
 .avro-card-team { font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--grey-500); margin: 0 0 3px; }
@@ -2274,5 +2364,24 @@ const CSS = `
   background: var(--black); color: var(--white); padding: 12px 20px; border-radius: 999px;
   display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; z-index: 100;
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+/* WhatsApp Float */
+.avro-whatsapp-float {
+  position: fixed; bottom: 24px; right: 24px;
+  width: 56px; height: 56px;
+  background: #25D366; color: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 99;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.avro-whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.avro-whatsapp-float:active {
+  transform: scale(0.95);
 }
 `;
