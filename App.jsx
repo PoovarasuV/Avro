@@ -224,8 +224,8 @@ const PRODUCTS = [
   number: "22",
 
   images: [
-    "/item8/1.png",
     "/item8/2.png",
+    "/item8/1.png",
     "/item8/3.png"
   ],
 
