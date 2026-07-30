@@ -2077,6 +2077,7 @@ html { scroll-behavior: smooth; }
   width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
   position: relative; border-radius: 999px;
 }
+.avro-wishlist-btn { display: none; }
 .avro-icon-btn:hover { background: var(--off-white); }
 .avro-cart-badge {
   position: absolute; top: 2px; right: 2px; background: var(--black); color: var(--white);
@@ -2099,6 +2100,7 @@ html { scroll-behavior: smooth; }
   .avro-nav-desktop { display: flex; }
   .avro-menu-btn { display: none; }
   .avro-mobile-menu { display: none; }
+  .avro-wishlist-btn { display: flex; }
   .avro-logo-img { height: 70px; max-width: none; }
   .avro-hero { padding: 90px 24px 70px; min-height: 78vh; }
   .avro-hero-title { font-size: clamp(56px, 13vw, 128px); letter-spacing: 1px; }
