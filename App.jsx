@@ -778,12 +778,12 @@ function TopBar({ view, goTo, cartCount, menuOpen, setMenuOpen, user }) {
         </nav>
 
         <div className="avro-topbar-actions">
-          <button className="avro-icon-btn avro-wishlist-btn" onClick={() => goTo("wishlist")} aria-label="Wishlist">
-            <Heart size={20} strokeWidth={1.75} />
-          </button>
           <button className="avro-icon-btn avro-cart-btn" onClick={() => goTo("cart")} aria-label="Bag">
             <ShoppingBag size={20} strokeWidth={1.75} />
             {cartCount > 0 && <span className="avro-cart-badge">{cartCount}</span>}
+          </button>
+          <button className="avro-icon-btn avro-wishlist-btn" onClick={() => goTo("wishlist")} aria-label="Wishlist">
+            <Heart size={20} strokeWidth={1.75} />
           </button>
           <button
             className="avro-icon-btn avro-menu-btn"
@@ -2077,7 +2077,9 @@ html { scroll-behavior: smooth; }
   width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
   position: relative; border-radius: 999px;
 }
-.avro-wishlist-btn { display: none; }
+.avro-wishlist-btn { display: none; order: 0; }
+.avro-cart-btn { order: 1; }
+.avro-menu-btn { order: 2; }
 .avro-icon-btn:hover { background: var(--off-white); }
 .avro-cart-badge {
   position: absolute; top: 2px; right: 2px; background: var(--black); color: var(--white);
