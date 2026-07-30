@@ -32,54 +32,56 @@ const WHATSAPP_NUMBER = "916383213966"; // country code + number
 /* ================= PRODUCT DATA ================= */
 const PRODUCTS = [
   {
-    id: "arg-10-2022",
-    name: "Argentina Home '26 — No.10",
-    team: "Argentina National Team",
-    category: "National",
-    tags: ["LIMITED DROP", "WORLD CHAMPIONS"],
-    price: 999,
+    id: "fcb-home-2026",
+    name: "Barcelona Home 2026/27 — No.10",
+    team: "FC Barcelona",
+    category: "Club",
+    tags: ["NEXT GENERATION"],
+    price: 899,
     mrp: 1599,
     number: "10",
-    images: ["/item1/Pose1.png", "/item1/Pose2.png", "/item1/Pose3.png", "/item1/10.webp", "/item1/11.webp"],
+    images: ["/item9/1.png", "/item9/2.png", "/item9/3.png"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     fit: "Athletic Regular Fit",
     description:
-      "The jersey that started a movement. Sky-blue and white bands, gold champions badge, No.10 on the chest. Built for match day, made for campus.",
+      "Celebrate the future of Barça with the official-inspired Barcelona 2026/27 Home Jersey featuring Lamine Yamal's iconic No.10 on the back. Crafted with premium embroidered club detailing and lightweight performance fabric, this jersey is designed for every passionate Culer—whether you're cheering from the stands or wearing it on the streets.",
     details: [
       "100% breathable performance polyester for all-day comfort",
       "Athletic regular fit with lightweight match-day feel",
-      "Premium embroidered Argentina crest with heat-pressed detailing",
-      "Comes with legendary Messi #10 printed on the back",
+      "Premium embroidered FC Barcelona crest and Nike logo",
+      "Features Lamine Yamal No.10 printed on the back",
+      "Vibrant home colors with premium finishing",
+      "Soft, durable fabric suitable for daily wear",
     ],
-    rating: 4.9,
-    reviewCount: 3,
-    stock: { S: 8, M: 12, L: 15, XL: 10, XXL: 5 },
-    totalStock: 50,
+    rating: 5.0,
+    reviewCount: 0,
+    stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
+    totalStock: 63,
   },
   {
-    id: "rma-away-blue",
-    name: "Real Madrid 2017-18 Third",
-    team: "Real Madrid C.F.",
-    category: "Club",
-    tags: ["CLUB ICON"],
-    price: 799,
-    mrp: 1399,
+    id: "por-7-away",
+    name: "Portugal Away 2026 — No.7",
+    team: "Portugal National Team",
+    category: "National",
+    tags: ["NATIONAL PRIDE"],
+    price: 899,
+    mrp: 1299,
     number: "7",
-    images: ["/item2/Pose1.png", "/item2/Pose2.png", "/item2/Pose3.png"],
+    images: ["/item5/1.png", "/item5/2.png", "/item5/3.png", "/item5/4.png"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     fit: "Athletic Regular Fit",
     description:
-      "The iconic Real Madrid Fly Emirates away jersey, crafted for fans who live the game. Comes with legendary Ronaldo #7 printed on the back for the complete match-day look.",
+      "Stand out in Portugal's bold 2026 Away Jersey, designed with premium comfort and modern match-day style. Finished with the legendary Cristiano Ronaldo #7 printed on the back for every true Portugal supporter.",
     details: [
-      "Soft-hand printed graphics, won't crack",
-      "Relaxed fit — layer it or wear it loose",
-      "Ribbed collar for shape retention",
-      "Machine washable, colour-fast print",
+      "100% breathable performance polyester",
+      "Lightweight athletic fit for all-day comfort",
+      "Premium embroidered Portugal crest with heat-pressed detailing",
+      "Comes with Cristiano Ronaldo #7 printed on the back",
     ],
-    rating: 4.8,
-    reviewCount: 2,
-    stock: { S: 10, M: 14, L: 18, XL: 12, XXL: 6 },
-    totalStock: 60,
+    rating: 5.0,
+    reviewCount: 0,
+    stock: { S: 8, M: 12, L: 15, XL: 10, XXL: 6 },
+    totalStock: 51,
   },
   {
     id: "esp-19-white",
@@ -132,29 +134,104 @@ const PRODUCTS = [
     totalStock: 51,
   },
   {
-    id: "por-7-away",
-    name: "Portugal Away 2026 — No.7",
-    team: "Portugal National Team",
-    category: "National",
-    tags: ["NATIONAL PRIDE"],
+    id: "rma-home-2011",
+    name: "Real Madrid Home 2011/12 — No.7",
+    team: "Real Madrid C.F.",
+    category: "Club",
+    tags: ["CLUB LEGEND"],
     price: 899,
-    mrp: 1299,
+    mrp: 1599,
     number: "7",
-    images: ["/item5/1.png", "/item5/2.png", "/item5/3.png", "/item5/4.png"],
+    images: ["/item7/ChatGPT Image Jul 28, 2026, 10_06_18 AM.png", "/item7/ChatGPT Image Jul 28, 2026, 10_06_29 AM.png", "/item7/ChatGPT Image Jul 28, 2026, 10_06_38 AM.png"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     fit: "Athletic Regular Fit",
     description:
-      "Stand out in Portugal's bold 2026 Away Jersey, designed with premium comfort and modern match-day style. Finished with the legendary Cristiano Ronaldo #7 printed on the back for every true Portugal supporter.",
+      "Relive the iconic 2011/12 season with Real Madrid's legendary home jersey. Finished with Cristiano Ronaldo #7 printed on the back, this timeless classic is built for every true Madridista.",
     details: [
-      "100% breathable performance polyester",
-      "Lightweight athletic fit for all-day comfort",
-      "Premium embroidered Portugal crest with heat-pressed detailing",
-      "Comes with Cristiano Ronaldo #7 printed on the back",
+      "100% breathable performance polyester for all-day comfort",
+      "Athletic regular fit with lightweight match-day feel",
+      "Premium embroidered Real Madrid crest with classic gold detailing",
+      "Comes with legendary Cristiano Ronaldo #7 printed on the back",
     ],
     rating: 5.0,
     reviewCount: 0,
-    stock: { S: 8, M: 12, L: 15, XL: 10, XXL: 6 },
-    totalStock: 51,
+    stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
+    totalStock: 63,
+  },
+  {
+    id: "acm-away-2012",
+    name: "AC Milan Away 2012/13 — No.22",
+    team: "A.C. Milan",
+    category: "Club",
+    tags: ["ITALIAN LEGEND"],
+    price: 899,
+    mrp: 1599,
+    number: "22",
+    images: ["/item8/2.png", "/item8/1.png", "/item8/3.png"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    fit: "Athletic Regular Fit",
+    description:
+      "Celebrate one of AC Milan's most memorable away kits with the iconic 2012/13 jersey. Finished with Kaká #22 on the back, this legendary design is made for every true Rossoneri supporter.",
+    details: [
+      "100% breathable performance polyester for all-day comfort",
+      "Athletic regular fit with lightweight match-day feel",
+      "Premium embroidered AC Milan crest with authentic detailing",
+      "Comes with legendary Kaká #22 printed on the back",
+    ],
+    rating: 5.0,
+    reviewCount: 0,
+    stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
+    totalStock: 63,
+  },
+  {
+    id: "arg-10-2022",
+    name: "Argentina Home '26 — No.10",
+    team: "Argentina National Team",
+    category: "National",
+    tags: ["LIMITED DROP", "WORLD CHAMPIONS"],
+    price: 899,
+    mrp: 1599,
+    number: "10",
+    images: ["/item1/Pose1.png", "/item1/Pose2.png", "/item1/Pose3.png", "/item1/10.webp", "/item1/11.webp"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    fit: "Athletic Regular Fit",
+    description:
+      "The jersey that started a movement. Sky-blue and white bands, gold champions badge, No.10 on the chest. Built for match day, made for campus.",
+    details: [
+      "100% breathable performance polyester for all-day comfort",
+      "Athletic regular fit with lightweight match-day feel",
+      "Premium embroidered Argentina crest with heat-pressed detailing",
+      "Comes with legendary Messi #10 printed on the back",
+    ],
+    rating: 4.9,
+    reviewCount: 3,
+    stock: { S: 8, M: 12, L: 15, XL: 10, XXL: 5 },
+    totalStock: 50,
+  },
+  {
+    id: "rma-away-blue",
+    name: "Real Madrid 2017-18 Third",
+    team: "Real Madrid C.F.",
+    category: "Club",
+    tags: ["CLUB ICON"],
+    price: 799,
+    mrp: 1399,
+    number: "7",
+    images: ["/item2/Pose1.png", "/item2/Pose2.png", "/item2/Pose3.png"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    fit: "Athletic Regular Fit",
+    description:
+      "The iconic Real Madrid Fly Emirates away jersey, crafted for fans who live the game. Comes with legendary Ronaldo #7 printed on the back for the complete match-day look.",
+    details: [
+      "Soft-hand printed graphics, won't crack",
+      "Relaxed fit — layer it or wear it loose",
+      "Ribbed collar for shape retention",
+      "Machine washable, colour-fast print",
+    ],
+    rating: 4.8,
+    reviewCount: 2,
+    stock: { S: 10, M: 14, L: 18, XL: 12, XXL: 6 },
+    totalStock: 60,
   },
   {
     id: "fcb-10-home",
@@ -181,76 +258,6 @@ const PRODUCTS = [
     stock: { S: 8, M: 12, L: 15, XL: 10, XXL: 6 },
     totalStock: 51,
   },
-  {
-    id: "rma-home-2011",
-    name: "Real Madrid Home 2011/12 — No.7",
-    team: "Real Madrid C.F.",
-    category: "Club",
-    tags: ["CLUB LEGEND", "GALÁCTICOS ERA"],
-    price: 999,
-    mrp: 1599,
-    number: "7",
-    images: ["/item7/ChatGPT Image Jul 28, 2026, 10_06_18 AM.png", "/item7/ChatGPT Image Jul 28, 2026, 10_06_29 AM.png", "/item7/ChatGPT Image Jul 28, 2026, 10_06_38 AM.png"],
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    fit: "Athletic Regular Fit",
-    description:
-      "Relive the iconic 2011/12 season with Real Madrid's legendary home jersey. Finished with Cristiano Ronaldo #7 printed on the back, this timeless classic is built for every true Madridista.",
-    details: [
-      "100% breathable performance polyester for all-day comfort",
-      "Athletic regular fit with lightweight match-day feel",
-      "Premium embroidered Real Madrid crest with classic gold detailing",
-      "Comes with legendary Cristiano Ronaldo #7 printed on the back",
-    ],
-    rating: 5.0,
-    reviewCount: 0,
-    stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
-    totalStock: 63,
-  },
-  {
-  id: "acm-away-2012",
-
-  name: "AC Milan Away 2012/13 — No.22",
-
-  team: "A.C. Milan",
-
-  category: "Club",
-
-  tags: ["ITALIAN LEGEND", "SERIE A CLASSIC"],
-
-  price: 999,
-
-  mrp: 1599,
-
-  number: "22",
-
-  images: [
-    "/item8/2.png",
-    "/item8/1.png",
-    "/item8/3.png"
-  ],
-
-  sizes: ["S", "M", "L", "XL", "XXL"],
-
-  fit: "Athletic Regular Fit",
-
-  description:
-    "Celebrate one of AC Milan's most memorable away kits with the iconic 2012/13 jersey. Finished with Kaká #22 on the back, this legendary design is made for every true Rossoneri supporter.",
-
-  details: [
-    "100% breathable performance polyester for all-day comfort",
-    "Athletic regular fit with lightweight match-day feel",
-    "Premium embroidered AC Milan crest with authentic detailing",
-    "Comes with legendary Kaká #22 printed on the back",
-  ],
-
-  rating: 5.0,
-
-  reviewCount: 0,
-
-  stock: { S: 10, M: 15, L: 18, XL: 12, XXL: 8 },
-
-  totalStock: 63,
-},
 ];
 
 const GATES = ["Main Gate", "2A Gate", "Allmart Gate", "SJT 11th Gate", "Others"];
@@ -1051,9 +1058,16 @@ function ProductPage({ product, addToCart, goTo, reviews }) {
   const [qty, setQty] = useState(1);
   const [error, setError] = useState("");
   const [imageIndex, setImageIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const images = product.images || [product.image];
   const hasMultipleImages = images.length > 1;
+
+  function handleImageChange(newIndex) {
+    setIsAnimating(true);
+    setImageIndex(newIndex);
+    setTimeout(() => setIsAnimating(false), 300);
+  }
 
   function handleAdd() {
     if (!size) {
@@ -1074,20 +1088,25 @@ function ProductPage({ product, addToCart, goTo, reviews }) {
           <span className="avro-card-number avro-card-number-lg" aria-hidden="true">
             {product.number}
           </span>
-          <img src={images[imageIndex]} alt={product.name} loading="lazy" />
+          <img 
+            src={images[imageIndex]} 
+            alt={product.name} 
+            loading="lazy" 
+            className={isAnimating ? "fade-in" : ""}
+          />
           <span className="avro-cod-badge-lg">CASH ON DELIVERY</span>
           {hasMultipleImages && (
             <>
               <button 
                 className="avro-image-nav avro-image-nav-prev"
-                onClick={() => setImageIndex((i) => (i === 0 ? images.length - 1 : i - 1))}
+                onClick={() => handleImageChange(imageIndex === 0 ? images.length - 1 : imageIndex - 1)}
                 aria-label="Previous image"
               >
                 <ChevronLeft size={24} />
               </button>
               <button 
                 className="avro-image-nav avro-image-nav-next"
-                onClick={() => setImageIndex((i) => (i === images.length - 1 ? 0 : i + 1))}
+                onClick={() => handleImageChange(imageIndex === images.length - 1 ? 0 : imageIndex + 1)}
                 aria-label="Next image"
               >
                 <ChevronRight size={24} />
@@ -1097,7 +1116,7 @@ function ProductPage({ product, addToCart, goTo, reviews }) {
                   <button
                     key={idx}
                     className={"avro-image-dot" + (idx === imageIndex ? " active" : "")}
-                    onClick={() => setImageIndex(idx)}
+                    onClick={() => handleImageChange(idx)}
                     aria-label={`Image ${idx + 1}`}
                   />
                 ))}
@@ -1915,6 +1934,8 @@ function Footer({ goTo }) {
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap');
 
+html { scroll-behavior: smooth; }
+
 .avro-root {
   --black: #0a0a0a;
   --near-black: #131313;
@@ -2152,7 +2173,7 @@ const CSS = `
 }
 .avro-card-number-lg { font-size: 110px; top: -10px; left: -6px; }
 .avro-card-tag {
-  position: absolute; top: 10px; right: 10px; background: var(--black); color: var(--white);
+  position: absolute; bottom: 10px; right: 10px; background: var(--black); color: var(--white);
   font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 5px 9px; border-radius: 2px;
 }
 .avro-cod-badge {
@@ -2229,7 +2250,18 @@ const CSS = `
   position: relative; background: var(--off-white); border-radius: 4px; overflow: hidden;
   aspect-ratio: 4/5;
 }
-.avro-product-media img { width: 100%; height: 100%; object-fit: cover; object-position: top center; position: relative; z-index: 1; }
+.avro-product-media img { 
+  width: 100%; height: 100%; object-fit: cover; object-position: top center; 
+  position: relative; z-index: 1; 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.avro-product-media img.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
 .avro-image-nav {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
   background: rgba(255, 255, 255, 0.9); border: none; border-radius: 50%;
