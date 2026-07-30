@@ -452,7 +452,7 @@ export default function App() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
-  }, [view]);
+  }, [view, activeProductId]);
 
   const activeProduct = useMemo(
     () => PRODUCTS.find((p) => p.id === activeProductId) || PRODUCTS[0],
