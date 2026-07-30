@@ -490,6 +490,7 @@ export default function App() {
   function openProduct(id) {
     setActiveProductId(id);
     goTo("product");
+    window.scrollTo(0, 0);
   }
 
   function addToCart(productId, size, qty) {
@@ -2245,7 +2246,7 @@ html { scroll-behavior: smooth; }
 }
 .avro-card-body { padding: 12px 14px 16px; }
 .avro-card-team { font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--grey-500); margin: 0 0 3px; }
-.avro-card-name { font-size: 16px; font-weight: 700; margin: 0 0 10px; letter-spacing: 0.2px; }
+.avro-card-name { font-size: 16px; font-weight: 700; margin: 0 0 10px; letter-spacing: 0.2px; color: var(--black); }
 .avro-card-price-row { display: flex; align-items: baseline; gap: 8px; }
 .avro-card-price { font-size: 17px; font-weight: 800; }
 .avro-card-mrp { font-size: 13px; color: var(--grey-500); text-decoration: line-through; }
