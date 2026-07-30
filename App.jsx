@@ -778,12 +778,12 @@ function TopBar({ view, goTo, cartCount, menuOpen, setMenuOpen, user }) {
         </nav>
 
         <div className="avro-topbar-actions">
+          <button className="avro-icon-btn avro-wishlist-btn" onClick={() => goTo("wishlist")} aria-label="Wishlist">
+            <Heart size={20} strokeWidth={1.75} />
+          </button>
           <button className="avro-icon-btn avro-cart-btn" onClick={() => goTo("cart")} aria-label="Bag">
             <ShoppingBag size={20} strokeWidth={1.75} />
             {cartCount > 0 && <span className="avro-cart-badge">{cartCount}</span>}
-          </button>
-          <button className="avro-icon-btn avro-wishlist-btn" onClick={() => goTo("wishlist")} aria-label="Wishlist">
-            <Heart size={20} strokeWidth={1.75} />
           </button>
           <button
             className="avro-icon-btn avro-menu-btn"
