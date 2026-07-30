@@ -1058,15 +1058,23 @@ function ProductPage({ product, addToCart, goTo, reviews }) {
   const [qty, setQty] = useState(1);
   const [error, setError] = useState("");
   const [imageIndex, setImageIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [animationClass, setAnimationClass] = useState("");
 
   const images = product.images || [product.image];
   const hasMultipleImages = images.length > 1;
 
   function handleImageChange(newIndex) {
-    setIsAnimating(true);
+    let direction;
+    if (newIndex === 0 && imageIndex === images.length - 1) {
+      direction = "slide-in-right";
+    } else if (imageIndex === 0 && newIndex === images.length - 1) {
+      direction = "slide-in-left";
+    } else {
+      direction = newIndex > imageIndex ? "slide-in-right" : "slide-in-left";
+    }
+    setAnimationClass(direction);
     setImageIndex(newIndex);
-    setTimeout(() => setIsAnimating(false), 300);
+    setTimeout(() => setAnimationClass(""), 400);
   }
 
   function handleAdd() {
@@ -1088,12 +1096,15 @@ function ProductPage({ product, addToCart, goTo, reviews }) {
           <span className="avro-card-number avro-card-number-lg" aria-hidden="true">
             {product.number}
           </span>
-          <img 
-            src={images[imageIndex]} 
-            alt={product.name} 
-            loading="lazy" 
-            className={isAnimating ? "fade-in" : ""}
-          />
+          {images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={product.name}
+              loading={idx === 0 ? "eager" : "lazy"}
+              className={idx === imageIndex ? `active ${animationClass}` : ""}
+            />
+          ))}
           <span className="avro-cod-badge-lg">CASH ON DELIVERY</span>
           {hasMultipleImages && (
             <>
@@ -2246,21 +2257,33 @@ html { scroll-behavior: smooth; }
 }
 .avro-back:hover { color: var(--black); }
 .avro-product-grid-2 { display: grid; grid-template-columns: 1fr; gap: 30px; }
-.avro-product-media {
+.avro-product-media { 
   position: relative; background: var(--off-white); border-radius: 4px; overflow: hidden;
   aspect-ratio: 4/5;
 }
 .avro-product-media img { 
   width: 100%; height: 100%; object-fit: cover; object-position: top center; 
-  position: relative; z-index: 1; 
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute; top: 0; left: 0; z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.avro-product-media img.fade-in {
-  animation: fadeIn 0.3s ease;
+.avro-product-media img.active {
+  opacity: 1;
+  z-index: 2;
 }
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.98); }
-  to { opacity: 1; transform: scale(1); }
+.avro-product-media img.slide-in-right {
+  animation: slideInRight 0.4s ease forwards;
+}
+.avro-product-media img.slide-in-left {
+  animation: slideInLeft 0.4s ease forwards;
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 .avro-image-nav {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
