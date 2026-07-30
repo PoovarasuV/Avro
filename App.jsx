@@ -19,6 +19,7 @@ import {
   Truck,
   RotateCcw,
   MessageCircle,
+  Heart,
 } from "lucide-react";
 
 /* ================= BRAND ASSETS ================= */
@@ -683,6 +684,14 @@ export default function App() {
             goTo={goTo}
           />
         )}
+        {view === "wishlist" && (
+          <WishlistPage
+            wishlist={wishlist}
+            toggleWishlist={toggleWishlist}
+            goTo={goTo}
+            openProduct={openProduct}
+          />
+        )}
         {view === "checkout" && (
           <CheckoutPage
             items={cartDetailed}
@@ -745,6 +754,7 @@ function TopBar({ view, goTo, cartCount, menuOpen, setMenuOpen, user }) {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "shop", label: "Shop" },
+    { id: "wishlist", label: "Wishlist" },
     { id: "reviews", label: "Reviews" },
     { id: "account", label: "Account" },
   ];
@@ -771,6 +781,9 @@ function TopBar({ view, goTo, cartCount, menuOpen, setMenuOpen, user }) {
           <button className="avro-icon-btn avro-cart-btn" onClick={() => goTo("cart")} aria-label="Bag">
             <ShoppingBag size={20} strokeWidth={1.75} />
             {cartCount > 0 && <span className="avro-cart-badge">{cartCount}</span>}
+          </button>
+          <button className="avro-icon-btn avro-wishlist-btn" onClick={() => goTo("wishlist")} aria-label="Wishlist">
+            <Heart size={20} strokeWidth={1.75} />
           </button>
           <button
             className="avro-icon-btn avro-menu-btn"
@@ -1324,6 +1337,43 @@ function CartPage({ items, updateQty, removeItem, subtotal, total, discountAmoun
               Checkout <ChevronRight size={16} />
             </button>
           </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ================= WISHLIST ================= */
+function WishlistPage({ wishlist, toggleWishlist, goTo, openProduct }) {
+  const wishlistProducts = PRODUCTS.filter(p => wishlist.includes(p.id));
+  
+  return (
+    <div className="avro-page">
+      <div className="avro-page-head">
+        <p className="avro-eyebrow">YOUR WISHLIST</p>
+        <h1 className="avro-h1">
+          {wishlistProducts.length === 0 ? "WISHLIST IS EMPTY" : "SAVED ITEMS"}
+        </h1>
+      </div>
+
+      {wishlistProducts.length === 0 ? (
+        <div className="avro-empty">
+          <p>No favorites yet.</p>
+          <button className="avro-btn avro-btn-primary" onClick={() => goTo("shop")}>
+            Shop the drop <ChevronRight size={16} />
+          </button>
+        </div>
+      ) : (
+        <div className="avro-product-grid">
+          {wishlistProducts.map((p) => (
+            <ProductCard 
+              key={p.id} 
+              product={p} 
+              onClick={() => openProduct(p.id)} 
+              wishlist={wishlist} 
+              toggleWishlist={toggleWishlist} 
+            />
+          ))}
         </div>
       )}
     </div>
@@ -2010,7 +2060,7 @@ html { scroll-behavior: smooth; }
   justify-content: space-between;
 }
 .avro-logo-btn { background: none; border: none; padding: 0; display: flex; align-items: center; }
-.avro-logo-img { height: 45px; width: auto; display: block; max-width: 180px; object-fit: contain; }
+.avro-logo-img { height: 55px; width: auto; display: block; max-width: 180px; object-fit: contain; }
 .avro-nav-desktop { display: none; gap: 32px; }
 .avro-nav-link {
   background: none; border: none; color: var(--grey-700);
@@ -2049,7 +2099,7 @@ html { scroll-behavior: smooth; }
   .avro-nav-desktop { display: flex; }
   .avro-menu-btn { display: none; }
   .avro-mobile-menu { display: none; }
-  .avro-logo-img { height: 60px; max-width: none; }
+  .avro-logo-img { height: 70px; max-width: none; }
   .avro-hero { padding: 90px 24px 70px; min-height: 78vh; }
   .avro-hero-title { font-size: clamp(56px, 13vw, 128px); letter-spacing: 1px; }
   .avro-hero-sub { max-width: 440px; font-size: 15px; margin: 0 0 32px; }
