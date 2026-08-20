@@ -360,6 +360,24 @@ const INITIAL_REVIEWS = [
     text: "Checked it at the main gate, paid cash, zero issues. The maroon trim looks way better in person than in photos.",
     date: "5 weeks ago",
   },
+  {
+    id: "r6",
+    name: "Karthik R.",
+    product: "Barcelona Away 2026/27 — No.10",
+    rating: 5,
+    text: "Amazing quality! Delivered within 3 days with free delivery. The away kit looks even better in person.",
+    date: "1 week ago",
+    image: "/review/IMG_8980.jpg",
+  },
+  {
+    id: "r7",
+    name: "Priya M.",
+    product: "Real Madrid Home 2026/27 — No.10",
+    rating: 5,
+    text: "Got it delivered within 3 days with free delivery. Mbappé No.10 printing is perfect. Highly recommend!",
+    date: "1 week ago",
+    image: "/review/IMG_8980.jpg",
+  },
 ];
 
 const DISCOUNT_CODES = {
