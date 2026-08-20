@@ -506,7 +506,7 @@ export default function App() {
   }, [toast]);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [view, activeProductId]);
 
   const activeProduct = useMemo(
@@ -545,7 +545,7 @@ export default function App() {
   function openProduct(id) {
     setActiveProductId(id);
     goTo("product");
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function addToCart(productId, size, qty) {
