@@ -343,6 +343,7 @@ const INITIAL_REVIEWS = [
     rating: 5,
     text: "Print quality is excellent. Comes with ronaldo name and 7 number",
     date: "1 month ago",
+    image: "/review/2.JPG",
   },
   {
     id: "r4",
@@ -351,14 +352,16 @@ const INITIAL_REVIEWS = [
     rating: 5,
     text: "The quality and fit is fantastic, you can pay when the order delivered in the vit main gate or 2A.",
     date: "1 month ago",
+    image: "/review/5.JPG",
   },
   {
     id: "r5",
     name: "Sanya P.",
-    product: "Spain Away 2026 — No.19",
+    product: "Spain Home 2026 — No.19",
     rating: 5,
     text: "Checked it at the main gate, paid cash, zero issues. The maroon trim looks way better in person than in photos.",
     date: "5 weeks ago",
+    image: "/review/4.JPG",
   },
   {
     id: "r6",
