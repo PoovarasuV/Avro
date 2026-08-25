@@ -341,7 +341,7 @@ const INITIAL_REVIEWS = [
     name: "Rohan D.",
     product: "Real Madrid 2017-18 Third",
     rating: 5,
-    text: "Print quality is excellent. Comes with ronaldo name and 7 number",
+    text: "Checked it at the main gate, paid cash, zero issues. The maroon trim looks way better in person than in photos.",
     date: "1 month ago",
     image: "/review/2.JPG",
   },
