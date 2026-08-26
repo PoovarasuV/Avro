@@ -497,11 +497,29 @@ const INITIAL_REVIEWS = [
   {
     id: "r6",
     name: "Priya M.",
-    product: "Barcelona Away 2026/27 — No.10 & Real Madrid Home 2026/27 — No.10",
+    product: "Real Madrid Home 2026/27 — No.10",
     rating: 5,
-    text: "Bought 2 jerseys. Got it delivered within 3 days with free delivery. Mbappé No.10 printing is perfect. Highly recommend!",
+    text: "Got it delivered within 3 days with free delivery. Mbappé No.10 printing is perfect. Highly recommend!",
     date: "1 week ago",
     image: "/review/IMG_8980.jpg",
+  },
+  {
+    id: "r7",
+    name: "Karthik R.",
+    product: "Real Madrid Home 2011/12 — No.7",
+    rating: 5,
+    text: "The classic Ronaldo era jersey! Quality is amazing, the gold detailing on the crest is perfect. Delivered to SJT gate in 2 days. Worth every rupee.",
+    date: "2 weeks ago",
+    image: "/review/3.JPG",
+  },
+  {
+    id: "r8",
+    name: "Anand R.",
+    product: "Brazil 2026 Home — No.10",
+    rating: 5,
+    text: "The embroidery of the logo is really high quality, looks exactly like the original. Delivered within 3 days to Gandhi Nagar, Vellore. Amazing quality for the price!",
+    date: "1 week ago",
+    image: "/review/5.png",
   },
 ];
 
