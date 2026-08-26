@@ -469,14 +469,6 @@ const INITIAL_REVIEWS = [
     image: "/reviews/argentina.jpg",
   },
   {
-    id: "r2",
-    name: "Meera K.",
-    product: "Spain Away 2026 — No.19",
-    rating: 5,
-    text: "Fabric feels genuinely premium, not the usual thin printed stuff. Delivered to Allmart gate same week, COD was smooth.",
-    date: "3 weeks ago",
-  },
-  {
     id: "r3",
     name: "Rohan D.",
     product: "Real Madrid 2017-18 Third",
@@ -520,6 +512,15 @@ const INITIAL_REVIEWS = [
     text: "The embroidery of the logo is really high quality, looks exactly like the original. Delivered within 3 days to Gandhi Nagar, Vellore. Amazing quality for the price!",
     date: "1 week ago",
     image: "/review/5.png",
+  },
+  {
+    id: "r9",
+    name: "Nithish",
+    product: "Spain Away 2026 — No.19",
+    rating: 5,
+    text: "Perfect quality and fast delivery to campus.",
+    date: "1 week ago",
+    image: "/review/7.png",
   },
 ];
 
