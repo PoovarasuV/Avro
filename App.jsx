@@ -982,7 +982,7 @@ function Home({ goTo, openProduct, reviews, wishlist, toggleWishlist }) {
           </div>
         </div>
         <div className="avro-hero-image">
-          <img src="/home%20image/1.png" alt="Hero Jersey" />
+          <img src="/hero-image/1.png" alt="Hero Jersey" />
         </div>
       </section>
 
