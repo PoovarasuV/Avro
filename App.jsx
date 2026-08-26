@@ -2263,6 +2263,7 @@ html { scroll-behavior: smooth; }
   padding: 60px 20px 50px;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   min-height: 65vh;
 }
