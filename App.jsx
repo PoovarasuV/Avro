@@ -981,6 +981,9 @@ function Home({ goTo, openProduct, reviews, wishlist, toggleWishlist }) {
             </a>
           </div>
         </div>
+        <div className="avro-hero-image">
+          <img src="/home image/1.png" alt="Hero Jersey" />
+        </div>
       </section>
 
       <section className="avro-strip">
@@ -2276,6 +2279,40 @@ html { scroll-behavior: smooth; }
   user-select: none;
 }
 .avro-hero-content { max-width: 1240px; margin: 0 auto; width: 100%; position: relative; z-index: 1; }
+.avro-hero-image {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.avro-hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 550px;
+}
+@media (min-width: 768px) {
+  .avro-hero {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .avro-hero-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  .avro-hero-image {
+    flex: 1;
+    max-width: 600px;
+    margin: 0;
+  }
+  .avro-hero-image img {
+    max-height: 600px;
+  }
+}
 .avro-hero .avro-eyebrow { color: var(--grey-300); }
 .avro-hero-title {
   font-size: clamp(36px, 10vw, 128px);
